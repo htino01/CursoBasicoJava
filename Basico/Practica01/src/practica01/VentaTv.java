@@ -10,12 +10,15 @@ package practica01;
  * @author Cursos
  */
 public class VentaTv {
-    public static void main(String[] args) {
+    public static void main(String[] args) {       
         double precioTv = 299;
-        int iva = 13;
+        double iva = 13;
         
-        double subTotal = precioTv * (iva/100);
-        double total = precioTv + subTotal;
-        System.out.println("Precio Final con IVA: " + total);
+        double valorIva = precioTv * (iva/100);
+        double total = precioTv + valorIva;
+        
+        System.out.println("SubTotal : " + precioTv);
+        System.out.println("IVA      : " + valorIva);
+        System.out.println("Total    : " + total);
     }
 }
