@@ -22,7 +22,8 @@ public class Motursa {
         for(int i = 1; i <= vidaUtil; i++){
             depreciacionAnual = valorEquipo - depreciacion;
             
-            System.out.println("Depreciacion año "+ i +": " + depreciacionAnual);
+            System.out.println("Depreciacion "+ i +" año "+ valorEquipo +" - "+ depreciacion + ": " + depreciacionAnual);
+            valorEquipo = depreciacionAnual;
         }
     }
 }
