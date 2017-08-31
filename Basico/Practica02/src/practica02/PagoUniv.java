@@ -15,15 +15,16 @@ public class PagoUniv {
     
     public static String pagoDocente(double sueldoPorHora, int cantAsignaturas, int horasPorAsignatura, int cantSemanas){
         int horasMes = (cantAsignaturas * horasPorAsignatura) * cantSemanas;
+        double impRenta = 10;
         double subTotal = horasMes * sueldoPorHora;
-        double calcRenta = subTotal / ((10/100)+1.1);
-        double renta = subTotal - calcRenta;
+        double total = subTotal / ((impRenta / 100) + 1);
+        double renta = subTotal - total;
         NumberFormat formato = new DecimalFormat("#0.00");
         
         System.out.println("Horas impartidas al Mes: " + horasMes + " Hrs");
         System.out.println("El sub-total a pagar es: $" + formato.format(subTotal));
         System.out.println("Menos 10% de Renta     : $" + formato.format(renta));
-        System.out.println("Total a pagar          : $" + formato.format(calcRenta));
+        System.out.println("Total a pagar          : $" + formato.format(total));
         return "";
     }
     
