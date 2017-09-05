@@ -27,7 +27,7 @@ public class BcoComedica {
     
     public static void main(String[] args) {
         double cantAhorro = 5000;
-        NumberFormat formato = new DecimalFormat("#0,000.00");
+        NumberFormat formato = new DecimalFormat("#0.00");
         double total = calcularInteresPlazo(cantAhorro);
         System.out.println("Dinero ahorrado al final: $" + formato.format(total));
     }
