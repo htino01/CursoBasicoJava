@@ -26,9 +26,7 @@ public class FechaNacimientoNit {
         String mesNac = nit.substring(6, 8);
         String anoNac = nit.substring(8, 10);
         
-        String patron = diaNac + separador + mesNac + separador + anoNac;
-        //String fechaNac = String.format(patron, separador);
-        
+        String patron = diaNac + separador + mesNac + separador + anoNac;      
         return patron;
     }
 }
